@@ -5,4 +5,8 @@ defmodule CircleHeroku.PageControllerTest do
     conn = get conn, "/"
     assert html_response(conn, 200) =~ "Welcome to Phoenix!"
   end
+
+  test "this should fail" do
+    assert true == false
+  end
 end
