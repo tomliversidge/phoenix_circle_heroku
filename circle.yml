@@ -33,3 +33,9 @@ test:
     - MIX_ENV=ci mix test
     - mkdir -p $CIRCLE_TEST_REPORTS/exunit
     - cp _build/ci/lib/circle_heroku/test-junit-report.xml $CIRCLE_TEST_REPORTS/exunit
+
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: quiet-thicket-30888
