@@ -12,8 +12,8 @@ config :logger, level: :warn
 # Configure your database
 config :circle_heroku, CircleHeroku.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "tomliversidge",
+  password: "",
   database: "circle_heroku_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
